@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Update prizes section with configuration
   updatePrizesSection();
-  
+
   // Apply theme configuration
   applyThemeConfiguration();
 
@@ -118,58 +118,33 @@ function updatePrizesSection() {
   }
 }
 
-// Mobile menu toggle functionality (if needed in the future)
-function toggleMobileMenu() {
-  const mobileMenu = document.querySelector(".mobile-menu");
-  if (mobileMenu) {
-    mobileMenu.classList.toggle("active");
-  }
-}
-
-// Project filter functionality (for future enhancement)
-function filterProjects(category) {
-  const projectCards = document.querySelectorAll(".project-card");
-
-  projectCards.forEach((card) => {
-    if (category === "all") {
-      card.style.display = "block";
-    } else {
-      const projectCategory = card.getAttribute("data-category");
-      if (projectCategory === category) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    }
-  });
-}
-
 // Function to apply theme configuration from config file
 function applyThemeConfiguration() {
   // Apply color palette
   if (config.theme && config.theme.colors) {
     const root = document.documentElement;
-    
+
     // Set color CSS variables
-    root.style.setProperty('--primary-color', config.theme.colors.primary);
-    root.style.setProperty('--secondary-color', config.theme.colors.secondary);
-    root.style.setProperty('--dark-color', config.theme.colors.dark);
-    root.style.setProperty('--light-color', config.theme.colors.light);
+    root.style.setProperty("--primary-color", config.theme.colors.primary);
+    root.style.setProperty("--secondary-color", config.theme.colors.secondary);
+    root.style.setProperty("--dark-color", config.theme.colors.dark);
+    root.style.setProperty("--light-color", config.theme.colors.light);
   }
-  
+
   // Apply font families
   if (config.theme && config.theme.fonts) {
     const root = document.documentElement;
-    
+
     // Set font CSS variables
-    root.style.setProperty('--heading-font', config.theme.fonts.heading);
-    root.style.setProperty('--body-font', config.theme.fonts.body);
+    root.style.setProperty("--heading-font", config.theme.fonts.heading);
+    root.style.setProperty("--body-font", config.theme.fonts.body);
   }
 }
 
 // Load project data from JSON file and render project cards
 async function loadProjectData() {
   try {
+    
     const response = await fetch("data/projects.json");
     if (!response.ok) {
       throw new Error("Failed to load project data");
@@ -195,7 +170,7 @@ async function loadProjectData() {
                         </div>
                         <div class="project-content">
                             <h3 class="project-title">${project.title}</h3>
-                            <p class="project-subtitle">${project.subtitle}</p>
+                           
                             <a href="${project.detailsUrl}" class="btn-secondary">View Details</a>
                         </div>
                     `;
@@ -204,7 +179,7 @@ async function loadProjectData() {
         });
 
       // Setup animations for the newly created cards
-      setupProjectCardAnimations();
+      // setupProjectCardAnimations();
     }
   } catch (error) {
     console.error("Error loading project data:", error);

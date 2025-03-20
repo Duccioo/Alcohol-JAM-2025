@@ -3,15 +3,10 @@
 import config from "./config.js";
 // Import notification functions
 import {sendTelegramNotification} from "./telegram-bot.js";
-import {setupTelegramWebhook} from "./telegram-webhook.js";
 // Email notification function (to be implemented)
 import {sendEmailNotification} from "./email-notification.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Setup Telegram webhook (for demo purposes)
-  if (config.submission.notificationMethod === "telegram") {
-    setupTelegramWebhook();
-  }
   const submissionForm = document.getElementById("jam-submission-form");
 
   if (submissionForm) {

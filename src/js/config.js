@@ -1,14 +1,15 @@
-// Configuration file for Code JAM Template
+
+
 
 const config = {
   // Theme Configuration
   theme: {
     // Color palette
     colors: {
-      primary: "#8a2be2", // Vibrant purple
-      secondary: "#ff6b6b", // Coral accent
-      dark: "#2d2d2d",
-      light: "#F5F5FA",
+      primary: "#cd5f2a", // Vibrant purple
+      secondary: "#f2ab37", // Coral accent
+      dark: "#21181b",
+      light: "#faf5d8",
     },
     // Font families
     fonts: {
@@ -18,9 +19,9 @@ const config = {
   },
   // Event Information
   event: {
-    name: "OpenTemplate JAM",
-    subtitle: "Showcase your skills and creativity!",
-    ctaText: "View Projects",
+    name: "Alcohol JAM",
+    subtitle: "Una code JAM sull... alcool!",
+    ctaText: "Guarda gli altri progetti",
     ctaLink: "#projects",
     year: 2025,
   },
@@ -28,15 +29,12 @@ const config = {
   // Submission Configuration
   submission: {
     // Notification method: 'telegram' or 'email'
-    notificationMethod: "email",
+    notificationMethod: "telegram",
 
     // Telegram Configuration (used if notificationMethod is 'telegram')
     telegram: {
-      botToken: "YOUR_BOT_TOKEN",
-      chatId: "YOUR_CHAT_ID",
-      // If true, will use webhook, if false will use polling (for demo/development)
-      useWebhook: false,
-      webhookUrl: "https://your-server.com/webhook/YOUR_BOT_TOKEN",
+      botToken: "",
+      chatId: "",
     },
 
     // Email Configuration (used if notificationMethod is 'email')
@@ -65,34 +63,20 @@ const config = {
     // Prize details
     items: [
       {
-        title: "First Prize",
+        title: "Primo Premio",
         icon: "🏆",
-        description:
-          "€000 cash prize + Professional mentorship from industry experts",
+        description: "...MISTEROooOo...",
         className: "first-prize",
       },
       {
-        title: "Second Prize",
-        icon: "🥈",
-        description: "€500 cash prize + Premium developer tools subscription",
-        className: "second-prize",
-      },
-      {
-        title: "Third Prize",
-        icon: "🥉",
-        description: "€250 cash prize + Digital gift cards",
-        className: "third-prize",
-      },
-      {
-        title: "Honorable Mentions",
+        title: "Partecipazione",
         icon: "🎖️",
-        description:
-          "Recognition on our website and social media channels + Digital certificates",
+        description: "...MISTEROOoOoo...",
         className: "honorable-mention",
       },
     ],
     // Note displayed below prizes
-    note: "All participants will receive a participation certificate",
+    note: "Provate a partecipare anche se non è obbligatorio!",
   },
 };
 

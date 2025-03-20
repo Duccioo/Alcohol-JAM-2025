@@ -41,7 +41,7 @@ async function sendEmailNotification(projectData) {
  */
 async function handleEmailProjectStatus(projectId, isApproved) {
     try {
-        const response = await fetch('data/projects.json');
+        const response = await fetch('/src/data/projects.json');
         const data = await response.json();
         
         // Find and update the project's visibility
@@ -50,7 +50,7 @@ async function handleEmailProjectStatus(projectId, isApproved) {
             project.visible = isApproved;
             
             // Save the updated projects data
-            await fetch('data/projects.json', {
+            await fetch('/src/data/projects.json', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

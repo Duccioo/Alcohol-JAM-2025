@@ -35,14 +35,13 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 Code JAM Template. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" class="social-link">Twitter</a>
-                <a href="#" class="social-link">GitHub</a>
-                <a href="#" class="social-link">Discord</a>
-            </div>
+          <p>&copy;<a href="https://github.com/Duccioo/QuickJAMTemplate" class="social-link">2025 Code JAM Template. All rights reserved.</a></p>
+          <div class="social-links">
+            <a href="https://www.duccio.me" class="social-link">WebSite</a>
+            <a href="https://github.com/Duccioo?tab=repositories" class="social-link">GitHub</a>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <!-- Add Marked.js for Markdown parsing -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -53,7 +52,7 @@
             const rulesContainer = document.getElementById('rules-content');
             
             // Fetch the markdown file
-            fetch('rules.md')
+            fetch('data/rules.md')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Failed to load rules');

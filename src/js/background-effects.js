@@ -20,7 +20,7 @@ class BackgroundEffect {
     };
     // Simplified emoji properties for checkerboard
     this.emojis = {
-      dark: "",
+      dark: "🍷",
       light: "🍻",
     };
     // Perlin noise setup
