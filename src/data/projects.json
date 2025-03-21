@@ -7,7 +7,7 @@
       "detailsUrl": "https://github.com/Leonardo-Salvador/progetto-memory.git",
       "visible": true,
       "id": "1741888628779",
-      "image": "data/photo_2025-03-21_15-44-44.jpg"
+      "image": "./data/photo_2025-03-21_15-44-44.jpg"
     },
     {
       "title": "Drinkiamo",
@@ -16,7 +16,7 @@
       "detailsUrl": "https://github.com/damianoncloud/drinks-app",
       "visible": true,
       "id": "1741828628776",
-      "image": "data/photo_2025-03-21_15-44-48.jpg"
+      "image": "./data/photo_2025-03-21_15-44-48.jpg"
     },
     {
       "title": "AlcoLovers",
@@ -25,7 +25,7 @@
       "detailsUrl": "https://github.com/Kokozilla/progetto-Duccio.git",
       "visible": true,
       "id": "1741118628776",
-      "image": "data/photo_2025-03-21_15-44-53.jpg"
+      "image": "./data/photo_2025-03-21_15-44-53.jpg"
     }
   ]
 }
