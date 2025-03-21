@@ -1,93 +1,94 @@
-# Quick JAM TEMPLATE
+# Alcohol JAM 2025
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-A customizable template for organizing and hosting Code JAM competitions. This template provides everything you need to set up a coding competition website with project submissions, rules display, and prize information.
+Benvenuti alla Alcohol JAM 2025! Una competizione di coding dedicata al tema dell'alcool in tutte le sue forme. Questo template fornisce tutto il necessario per partecipare alla jam, inviare progetti, visualizzare le regole e scoprire i premi in palio.
 
-[Check the preview HERE !!!](https://duccioo.github.io/QuickJAMTemplate/)
+[Guarda l'anteprima QUI !!!](https://duccioo.github.io/Alcohol-JAM-2025/)
 
 ![JAM Preview](assets/example.gif)
 
-## 📋 Features
+## 🍺 Caratteristiche
 
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
-- **Project Showcase**: Display submitted projects in a visually appealing grid
-- **Submission Form**: Built-in form for project submissions
-- **Rules Display**: Markdown-based rules that are easy to update
-- **Prize Showcase**: Configurable prize display section
-- **Customizable Theme**: Easily change colors, fonts, and content
-- **Notification System**: Support for email or Telegram notifications
+- **Design Responsive**: Funziona su desktop, tablet e dispositivi mobili
+- **Vetrina Progetti**: Mostra i progetti inviati in una griglia visivamente accattivante
+- **Form di Invio**: Modulo integrato per l'invio dei progetti
+- **Visualizzazione Regole**: Regole basate su Markdown facili da aggiornare
+- **Vetrina Premi**: Sezione premi configurabile
+- **Tema Personalizzabile**: Cambia facilmente colori, font e contenuti
+- **Sistema di Notifiche**: Supporto per notifiche via email o Telegram
 
-## 🚀 Getting Started
+## 🥃 Per Iniziare
 
-### Prerequisites
+### Prerequisiti
 
-- A web server or hosting service to deploy the website
-- Basic knowledge of HTML, CSS, and JavaScript (for customization)
+- Un server web o servizio di hosting per distribuire il sito
+- Conoscenza base di HTML, CSS e JavaScript (per personalizzazione)
 
-### Installation
+### Installazione
 
-1. Clone this repository:
+1. Clona questo repository:
 
    ```bash
-   git clone https://github.com/Duccioo/QuickJAMTemplate.git
+   git clone https://github.com/Duccioo/Alcohol-JAM-2025.git
    ```
 
-2. Upload the files to your web server or hosting service
+2. Carica i file sul tuo server web o servizio di hosting
 
-3. Customize the configuration in `js/config.js` to match your event details
+3. Personalizza la configurazione in `src/js/config.js` per adattarla ai dettagli del tuo progetto
 
-4. Update the rules in `rules.md` to reflect your competition guidelines
+4. Aggiorna le regole in `src/data/rules.md` per riflettere le tue linee guida
 
-5. Modify the project data in `data/projects.json` to showcase submitted projects
+5. Modifica i dati del progetto in `src/data/projects.json` per mostrare i progetti inviati
 
-## ⚙️ Configuration
+## 🍷 Configurazione
 
-The template is highly configurable through the `js/config.js` file. Here are the main configuration options:
+Il template è altamente configurabile attraverso il file `src/js/config.js`. Ecco le principali opzioni di configurazione:
 
-### Theme Configuration
+### Configurazione Tema
 
 ```javascript
 theme: {
-  // Color palette
+  // Palette colori
   colors: {
-    primary: "#8a2be2", // Vibrant purple
-    secondary: "#ff6b6b", // Coral accent
-    dark: "#2d2d2d",
-    light: "#F0F0F5",
+    primary: "#cd5f2a", // Arancione ambrato
+    secondary: "#f2ab37", // Giallo dorato
+    dark: "#21181b",
+    light: "#faf5d8",
   },
-  // Font families
+  // Famiglie di font
   fonts: {
     heading: "'Press Start 2P', cursive",
-    body: "'Helvetica Neue', sans-serif",
+    body: "'JetBrains Mono', monospace",
   },
 }
 ```
 
-### Event Information
+### Informazioni Evento
 
 ```javascript
 event: {
-  name: "OpenTemplate JAM",
-  subtitle: "Showcase your skills and creativity!",
-  ctaText: "View Projects",
+  name: "Alcohol JAM",
+  subtitle: "Una code JAM sull... alcool!",
+  ctaText: "Guarda gli altri progetti",
   ctaLink: "#projects",
   year: 2025,
+  endDate: "2025-03-19T20:00:00", // Data di fine JAM in formato ISO
 }
 ```
 
-### Notification Configuration
+### Configurazione Notifiche
 
-The template supports two notification methods for project submissions:
+Il template supporta due metodi di notifica per l'invio dei progetti:
 
-#### Email Notifications
+#### Notifiche Email
 
 ```javascript
 submission: {
   notificationMethod: "email",
   email: {
     recipientEmail: "admin@codejam.example.com",
-    subjectPrefix: "[Code JAM Submission]",
+    subjectPrefix: "[Alcohol JAM Submission]",
     smtp: {
       host: "smtp.example.com",
       port: 587,
@@ -101,7 +102,7 @@ submission: {
 }
 ```
 
-#### Telegram Notifications
+#### Notifiche Telegram
 
 ```javascript
 submission: {
@@ -109,69 +110,72 @@ submission: {
   telegram: {
     botToken: "YOUR_BOT_TOKEN",
     chatId: "YOUR_CHAT_ID",
-    useWebhook: false,
-    webhookUrl: "https://your-server.com/webhook/YOUR_BOT_TOKEN",
   },
 }
 ```
 
-### Prize Configuration
+### Configurazione Premi
 
 ```javascript
 prizes: {
-  count: 4, // Number of prizes to display (1-4)
+  count: 4, // Numero di premi da visualizzare (1-4)
   items: [
     {
-      title: "First Prize",
+      title: "Primo Premio",
       icon: "🏆",
-      description: "€1000 cash prize + Professional mentorship from industry experts",
+      description: "...MISTEROooOo...",
       className: "first-prize",
     },
-    // Additional prizes...
+    {
+      title: "Partecipazione",
+      icon: "🎖️",
+      description: "...MISTEROOoOoo...",
+      className: "honorable-mention",
+    },
   ],
-  note: "All participants will receive a participation certificate",
+  note: "Provate a partecipare anche se non è obbligatorio!",
 }
 ```
 
-## 📝 Updating Competition Rules
+## 📝 Aggiornamento delle Regole della Competizione
 
-The competition rules are stored in the `rules.md` file in Markdown format. Edit this file to update your competition rules. The changes will be automatically reflected on the rules page.
+Le regole della competizione sono memorizzate nel file `src/data/rules.md` in formato Markdown. Modifica questo file per aggiornare le regole della tua competizione. Le modifiche saranno automaticamente riflesse nella pagina delle regole.
 
-## 📊 Managing Project Submissions
+## 📊 Gestione degli Invii dei Progetti
 
-Project submissions are stored in the `data/projects.json` file. You can manually update this file or implement server-side logic to automatically update it when users submit projects through the submission form.
+Gli invii dei progetti sono memorizzati nel file `src/data/projects.json`. Puoi aggiornare manualmente questo file o implementare una logica lato server per aggiornarlo automaticamente quando gli utenti inviano progetti attraverso il modulo di invio.
 
-## 🔧 Customization
+## 🔧 Personalizzazione
 
-### Styling
+### Stile
 
-The main stylesheet is located at `css/style.css`. You can modify this file to customize the appearance of the website beyond what's available in the configuration file.
+Il foglio di stile principale si trova in `src/css/style.css`. Puoi modificare questo file per personalizzare l'aspetto del sito web oltre a ciò che è disponibile nel file di configurazione.
 
-### Adding Pages
+### Aggiunta di Pagine
 
-To add new pages to the website:
+Per aggiungere nuove pagine al sito web:
 
-1. Create a new HTML file based on the existing pages
-2. Add links to the new page in the navigation menu in each HTML file
-3. Update the JavaScript files as needed to support the new page
+1. Crea un nuovo file HTML basato sulle pagine esistenti
+2. Aggiungi link alla nuova pagina nel menu di navigazione in ogni file HTML
+3. Aggiorna i file JavaScript secondo necessità per supportare la nuova pagina
 
-## 📄 License
+## 📄 Licenza
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Questo progetto è concesso in licenza sotto la Licenza MIT - vedi il file LICENSE per i dettagli.
 
-## 🤝 Contributing
+## 🤝 Contribuire
 
-Contributions are welcome! Feel free to submit issues or pull requests to improve the template.
+I contributi sono benvenuti! Sentiti libero di inviare problemi o pull request per migliorare il template.
 
 ## 📞 Feedback
 
-If you have any feedback, please reach out to me at meconcelliduccio@gmail.com or visit my website
+Se hai qualche feedback, contattami all'indirizzo email: meconcelliduccio@gmail.com o visita il mio sito web
 [duccio.me](https://duccio.me)
 
-## Authors
+## Autori
 
 - [@duccioo](https://github.com/Duccioo)
 
 ---
 
-Made with ❤️ for the coding community
+Realizzato con ❤️ e 🍻 per la comunità di coding
