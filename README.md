@@ -4,9 +4,8 @@
 
 Benvenuti alla Alcohol JAM 2025! Una competizione di coding dedicata al tema dell'alcool in tutte le sue forme. Questo template fornisce tutto il necessario per partecipare alla jam, inviare progetti, visualizzare le regole e scoprire i premi in palio.
 
-[Guarda l'anteprima QUI !!!](https://duccioo.github.io/Alcohol-JAM-2025/)
 
-![JAM Preview](assets/example.gif)
+![JAM Preview](assets/example.png)
 
 ## 🍺 Caratteristiche
 
