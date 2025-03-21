@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "title": "Memory Game Drunk Simpsons",
+      "subtitle": "Gioco di memory con immagini Simpsons sbronzi per formare le coppie di carte. Per adesso abbiamo lavorato sul jsx più che sul css quindi purtroppo ancora le immagini dei simpson non sono state implementate.",
+      "creatorEmail": "leonardo.salvador.posta@gmail.com",
+      "detailsUrl": "https://github.com/Leonardo-Salvador/progetto-memory.git",
+      "visible": true,
+      "id": "1741888628779",
+      "image": "./data/photo_2025-03-21_15-44-44.jpg"
+    },
+    {
+      "title": "Drinkiamo",
+      "subtitle": "Order your cocktail at your favourite venue",
+      "creatorEmail": "damiano.delbell@gmail.com",
+      "detailsUrl": "https://github.com/damianoncloud/drinks-app",
+      "visible": true,
+      "id": "1741828628776",
+      "image": "./data/photo_2025-03-21_15-44-48.jpg"
+    },
+    {
+      "title": "AlcoLovers",
+      "subtitle": "Sito che parla di alcol",
+      "creatorEmail": "courageoviawe@gmail.com",
+      "detailsUrl": "https://github.com/Kokozilla/progetto-alcol.git",
+      "visible": true,
+      "id": "1741118628776",
+      "image": "./data/photo_2025-03-21_15-44-53.jpg"
+    }
+  ]
+}

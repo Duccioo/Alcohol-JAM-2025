@@ -1,0 +1,114 @@
+/* Countdown Timer Styles */
+.jam-timer {
+  margin: 20px auto 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.timer-container {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.timer-container.active {
+  background-color: rgba(205, 95, 42, 0.2);
+  border: 2px solid rgba(205, 95, 42, 0.3);
+}
+
+.timer-container.expired {
+  background-color: rgba(45, 45, 45, 0.2);
+  border: 2px solid rgba(45, 45, 45, 0.3);
+}
+
+.timer-message {
+  font-family: var(--heading-font, "Press Start 2P", cursive);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.timer-countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.timer-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.timer-value {
+  font-family: var(--heading-font, "Press Start 2P", cursive);
+  font-size: 1.8rem;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 60px;
+  display: inline-block;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.timer-label {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: var(--dark-color);
+}
+
+.timer-subtitle {
+  font-size: 0.9rem;
+  color: var(--dark-color);
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .timer-countdown {
+    gap: 10px;
+  }
+  
+  .timer-unit {
+    min-width: 60px;
+  }
+  
+  .timer-value {
+    font-size: 1.4rem;
+    min-width: 50px;
+  }
+  
+  .timer-message {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer-countdown {
+    gap: 5px;
+  }
+  
+  .timer-unit {
+    min-width: 50px;
+  }
+  
+  .timer-value {
+    font-size: 1.2rem;
+    min-width: 40px;
+    padding: 8px;
+  }
+  
+  .timer-label {
+    font-size: 0.7rem;
+  }
+  
+  .timer-message {
+    font-size: 0.9rem;
+  }
+}
