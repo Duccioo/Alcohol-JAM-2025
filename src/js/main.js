@@ -1,6 +1,8 @@
 // Smooth scrolling for navigation links
 // Import configuration
 import config from "./config.js";
+// Import countdown timer
+import "./countdown-timer.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const scrollLinks = document.querySelectorAll('a[href^="#"]');

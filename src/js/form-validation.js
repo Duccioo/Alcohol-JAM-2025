@@ -10,6 +10,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const submissionForm = document.getElementById("jam-submission-form");
 
   if (submissionForm) {
+    // Controllo scadenza JAM
+    const endDate = new Date(config.event.endDate);
+    const currentDate = new Date();
+
+    const formStatus = document.getElementById("form-status");
+
+    if (currentDate > endDate) {
+      submissionForm.innerHTML = `
+          <div class="expired-message">
+            <h3>La JAM è conclusa!</h3>
+            <p>Non è più possibile inviare progetti.</p>
+            <p>Grazie a tutti i partecipanti!</p>
+          </div>
+        `;
+
+      return;
+    }
     // GitHub URL validation
     const githubLinkInput = document.getElementById("github-link");
     const emailInput = document.getElementById("creator-email");
@@ -17,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectSubtitleInput = document.getElementById("project-subtitle");
     const projectImageInput = document.getElementById("project-image");
     const submitButton = document.getElementById("submit-project");
-    const formStatus = document.getElementById("form-status");
+    formStatus = document.getElementById("form-status");
 
     // Validate GitHub URL format
     function isValidGithubUrl(url) {

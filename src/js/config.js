@@ -1,6 +1,3 @@
-
-
-
 const config = {
   // Theme Configuration
   theme: {
@@ -24,6 +21,7 @@ const config = {
     ctaText: "Guarda gli altri progetti",
     ctaLink: "#projects",
     year: 2025,
+    endDate: "2025-03-19T20:00:00", // Data di fine JAM in formato ISO
   },
 
   // Submission Configuration
